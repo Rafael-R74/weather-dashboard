@@ -1,60 +1,63 @@
-# Weather Dashboard
+# Weather Dashboard 🌤️
 
 <div align="center">
 
 ![Screenshot 1](https://i.postimg.cc/5y65H4f9/Captura-de-tela-2026-04-26-142808.png)
-
 ![Screenshot 2](https://i.postimg.cc/rFh5d49z/Captura-de-tela-2026-04-26-142932.png)
-
 ![Screenshot 3](https://i.postimg.cc/ydq6tH4B/Captura-de-tela-2026-04-26-143229.png)
-
 ![Screenshot 4](https://i.postimg.cc/2S5T5WwS/Captura-de-tela-2026-04-26-143343.png)
+
+*Choose your language / Escolha seu idioma:*
+[🇺🇸 English](#english) | [🇧🇷 Português](#português)
 
 </div>
 
-<br>
+---
 
-A modern and responsive weather dashboard developed as part of a final technical project. This application provides real-time weather conditions and forecasts using the **Open-Meteo API**. The interface features a dynamic glassmorphism design that adapts to different weather conditions (sunny, cloudy, rainy, and night) and includes features such as search functionality, geolocation, autocomplete suggestions, and a history of recent searches.
+## 🇺🇸 English
 
-## Features
+A modern and responsive weather dashboard developed as part of a technical portfolio. This application provides real-time weather conditions and forecasts using the **Open-Meteo API**. The interface features a dynamic glassmorphism design that adapts to different weather conditions (sunny, cloudy, rainy, and night) and includes features such as search functionality, geolocation, autocomplete suggestions, and a history of recent searches.
 
-### Core Functionality
-- **Real-time Weather Data**: Fetches current weather conditions and 7-day forecasts.
-- **Search**: Allows users to search for weather in specific cities.
-- **Geolocation**: Uses the browser's geolocation API to detect the user's current location.
-- **Autocomplete & Recent Searches**: Suggests city names as the user types and maintains a list of recently searched locations.
+### ✨ Features
+- **Real-time Weather Data**: Fetches current weather conditions and 5-day forecasts.
+- **Geolocation API**: Uses the browser's native API to detect the user's current location with a single click.
+- **Autocomplete Suggestions**: Suggests city names worldwide as the user types (with debounce).
+- **Dynamic Themes**: The background gradients and colors automatically adjust based on the current weather conditions (Sunny, Cloudy, Rainy, Night).
+- **Recent Searches**: Saves the latest searches using `localStorage` for quick access.
+- **Security**: Hardened with Content Security Policy (CSP) and XSS prevention (using strict DOM manipulation).
 
-### Dynamic & Responsive Design
-- **Glassmorphism UI**: Utilizes a modern glassmorphism design with frosted glass effects.
-- **Theme Adaptation**: The background gradients, colors, and glass effects automatically adjust based on the current weather conditions (Sunny, Cloudy, Rainy, Night).
-- **Responsive Layout**: Fully responsive design that adapts to different screen sizes.
+### 🛠️ Technologies Used
+- **HTML5** & **CSS3** (Custom Glassmorphism styling, no frameworks)
+- **JavaScript (Vanilla)** (ES6+, Async/Await)
+- **[Open-Meteo API](https://open-meteo.com/)**: Weather data and Geocoding.
+- **[BigDataCloud API](https://www.bigdatacloud.io/)**: Free Reverse Geocoding.
 
-### Technical Features
-- **API Integration**: Uses **Open-Meteo** for weather data.
-- **Autocomplete**: Uses a search API to provide suggestions while typing.
-- **Reverse Geocoding**: Uses **BigDataCloud** to retrieve city names from coordinates.
-- **Local Storage**: Saves recent searches for quick access.
+### 🚀 Local Setup
+1. Clone the repository: `git clone <repository-url>`
+2. Open the folder and launch `index.html` in your favorite web browser (or use VSCode Live Server).
+3. No API keys are required!
 
-## Local Setup
+---
 
-1.  **Clone the repository** (or download the source code):
-    ```bash
-    git clone <repository-url>
-    ```
-2.  **Open the `index.html` file** in your web browser.
+## 🇧🇷 Português
 
-## Usage
+Um dashboard de clima moderno e responsivo, desenvolvido como parte de um portfólio técnico. Esta aplicação fornece condições climáticas em tempo real e previsões utilizando a **Open-Meteo API**. A interface apresenta um design dinâmico em *glassmorphism* que se adapta a diferentes condições climáticas (ensolarado, nublado, chuvoso e noite) e inclui funcionalidades avançadas como busca, geolocalização nativa, sugestões de preenchimento automático (autocomplete) e histórico de pesquisas.
 
-- Enter a city name in the search bar and press Enter or click the search icon.
-- Click the target icon to get weather for your current location.
-- Click on a suggestion from the autocomplete dropdown to select a city.
-- Recent searches are automatically saved and can be clicked to quickly view weather for those locations.
+### ✨ Funcionalidades
+- **Dados em Tempo Real**: Busca as condições climáticas atuais e previsão para 5 dias.
+- **Geolocalização (GPS)**: Utiliza a API nativa do navegador para detectar a localização atual do usuário com um clique.
+- **Autocomplete (Sugestões)**: Sugere nomes de cidades pelo mundo enquanto o usuário digita na barra (utilizando técnica de *debounce*).
+- **Temas Dinâmicos**: As cores e gradientes do fundo da tela se ajustam automaticamente baseados no clima (Sol, Chuva, Nublado ou Noite).
+- **Pesquisas Recentes**: Salva automaticamente as últimas cidades buscadas usando o `localStorage` do navegador para acesso rápido.
+- **Segurança**: Protegido com Política de Segurança de Conteúdo (CSP) e prevenção contra XSS (usando manipulação estrita do DOM).
 
-## Technologies Used
+### 🛠️ Tecnologias Utilizadas
+- **HTML5** & **CSS3** (Estilização *Glassmorphism* pura, sem frameworks)
+- **JavaScript (Vanilla)** (ES6+, Async/Await)
+- **[Open-Meteo API](https://open-meteo.com/)**: Dados meteorológicos e Geocodificação (busca de cidades).
+- **[BigDataCloud API](https://www.bigdatacloud.io/)**: Geocodificação reversa gratuita (latitude/longitude para nome de cidade).
 
-- **HTML5**: For the structure of the application.
-- **CSS3**: For styling, animations, and the glassmorphism effect.
-- **JavaScript (Vanilla)**: For the core logic and API integrations.
-- **[Open-Meteo API](https://open-meteo.com/)**: For weather data.
-- **[BigDataCloud API](https://www.bigdatacloud.io/)**: For reverse geocoding (city name lookup).
-
+### 🚀 Como Rodar Localmente
+1. Clone este repositório: `git clone <repository-url>`
+2. Abra a pasta e inicie o arquivo `index.html` diretamente no seu navegador (ou use o Live Server do VSCode).
+3. Não é necessário configurar chaves de API (API Keys)!

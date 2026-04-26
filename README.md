@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Screenshot 1](https://i.postimg.cc/5y65H4f9/Captura-de-tela-2026-04-26-142808.png)
-![Screenshot 2](https://i.postimg.cc/rFh5d49z/Captura-de-tela-2026-04-26-142932.png)
-![Screenshot 3](https://i.postimg.cc/ydq6tH4B/Captura-de-tela-2026-04-26-143229.png)
-![Screenshot 4](https://i.postimg.cc/2S5T5WwS/Captura-de-tela-2026-04-26-143343.png)
+![Screenshot 1 - Rio de Janeiro](assets/weather_rio_1777186507576.png)
+![Screenshot 2 - London](assets/weather_london_clean_1777186578895.png)
+![Screenshot 3 - Autocomplete](assets/autocomplete_dropdown_1777186501592.png)
+![Screenshot 4 - Histórico](assets/search_history_1777186552137.png)
 
 *Choose your language / Escolha seu idioma:*
 [🇺🇸 English](#english) | [🇧🇷 Português](#português)

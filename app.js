@@ -293,9 +293,6 @@ locationBtn.addEventListener('click', () => {
                 const lat = position.coords.latitude;
                 const lon = position.coords.longitude;
                 
-                // Buscar nome da cidade via Reverse Geocoding API do OpenMeteo não está disponível, mas podemos
-                // usar o endpoint de weather direto. O ideal é usar alguma API pra pegar a cidade real,
-                // mas vamos tentar usar o BigDataCloud ou similar gratuito sem key para pegar a cidade.
                 try {
                     const revUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}&localityLanguage=pt`;
                     const revRes = await fetch(revUrl);

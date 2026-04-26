@@ -8,13 +8,13 @@
 ![Screenshot 4 - Histórico](assets/search_history_1777186552137.png)
 
 *Choose your language / Escolha seu idioma:*
-[🇺🇸 English](#english) | [🇧🇷 Português](#português)
+[🇺🇸 English](#English) | [🇧🇷 Português](#Portugues)
 
 </div>
 
 ---
 
-## 🇺🇸 English
+## English
 
 A modern and responsive weather dashboard developed as part of a technical portfolio. This application provides real-time weather conditions and forecasts using the **Open-Meteo API**. The interface features a dynamic glassmorphism design that adapts to different weather conditions (sunny, cloudy, rainy, and night) and includes features such as search functionality, geolocation, autocomplete suggestions, and a history of recent searches.
 
@@ -39,7 +39,7 @@ A modern and responsive weather dashboard developed as part of a technical portf
 
 ---
 
-## 🇧🇷 Português
+## Portugues
 
 Um dashboard de clima moderno e responsivo, desenvolvido como parte de um portfólio técnico. Esta aplicação fornece condições climáticas em tempo real e previsões utilizando a **Open-Meteo API**. A interface apresenta um design dinâmico em *glassmorphism* que se adapta a diferentes condições climáticas (ensolarado, nublado, chuvoso e noite) e inclui funcionalidades avançadas como busca, geolocalização nativa, sugestões de preenchimento automático (autocomplete) e histórico de pesquisas.
 

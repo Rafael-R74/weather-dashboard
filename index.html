@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima - Dashboard Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container glass-panel">
+        <header>
+            <div class="search-container-wrapper">
+                <div class="search-box">
+                    <button id="location-btn" title="Minha Localização"><i class="fa-solid fa-location-crosshairs"></i></button>
+                    <input type="text" id="city-input" placeholder="Buscar cidade (ex: São Paulo)..." autocomplete="off">
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <ul id="autocomplete-dropdown" class="autocomplete-dropdown hidden">
+                    <!-- Sugestões geradas via JS -->
+                </ul>
+            </div>
+            <div id="error-message" class="hidden">Cidade não encontrada. Tente novamente.</div>
+        </header>
+
+        <main id="weather-main" class="hidden">
+            <div class="current-weather">
+                <div class="weather-info">
+                    <h1 id="city-name">São Paulo</h1>
+                    <p id="weather-description">Ensolarado</p>
+                    <h2 id="temperature">--°C</h2>
+                </div>
+                <div class="weather-icon-large">
+                    <i id="main-icon" class="fa-solid fa-cloud"></i>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-card">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <p>Umidade</p>
+                        <h3 id="humidity">--%</h3>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p>Vento</p>
+                        <h3 id="wind-speed">-- km/h</h3>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <div>
+                        <p>Sensação Térmica</p>
+                        <h3 id="feels-like">--°C</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h3>Previsão (Próximos Dias)</h3>
+                <div class="forecast-grid" id="forecast-grid">
+                    <!-- Gerado dinamicamente via JS -->
+                </div>
+            </div>
+        </main>
+        
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Buscando informações do clima...</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
